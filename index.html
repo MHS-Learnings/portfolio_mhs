@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ur">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting to Portfolio...</title>
+    
+    <!-- 3 سیکنڈ بعد آپ کی Lovable ویب سائٹ پر بھیج دے گا -->
+    <meta http-equiv="refresh" content="3;url=https://YOUR-LOVABLE-WEBSITE-URL.lovable.app">
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0d1117; /* GitHub Dark Theme Background */
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            flex-direction: column;
+        }
+
+        /* Loading Animation CSS */
+        .spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.1);
+            border-top: 5px solid #58a6ff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        p {
+            font-size: 18px;
+            color: #8b949e;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Animation Element -->
+    <div class="spinner"></div>
+    <h2>Redirecting to My Portfolio...</h2>
+    <p>Please wait a moment.</p>
+
+    <!-- JavaScript Fallback (اگر میٹا ریفریش کام نہ کرے) -->
+    <script>
+        setTimeout(function() {
+            window.location.href = "https://YOUR-LOVABLE-WEBSITE-URL.lovable.app";
+        }, 3000); // 3000ms = 3 Seconds
+    </script>
+</body>
+</html>
